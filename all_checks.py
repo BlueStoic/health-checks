@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import os
+import sys
 
 def check_reebot():
 	"""Returns True if the computer has a pending reboot."""
@@ -7,7 +8,9 @@ def check_reebot():
 
 
 def main():
-	pass
+	if check_reebot():
+		print("Pending reboot.")
+		sys.exit(1)
 
 
 main()
