@@ -4,7 +4,7 @@ import sys
 
 def check_reebot():
 	"""Returns True if the computer has a pending reboot."""
-	return os.path.exists("/run/reboot-required")
+	return os.path.exist("/run/reoot-required")
 
 
 def main():
