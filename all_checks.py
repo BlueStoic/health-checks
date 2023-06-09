@@ -17,12 +17,12 @@ def check_disk_full(disk, min_gb, min_percent):
 	return False
 
 
+""" The main function contains the call to all the other functions"""
 def main():
 	if check_reebot():
 		print("Pending reboot.")
 		sys.exit(1)
 	print("Everything is OK")
 	sys.exit(0)
-
 
 main()
