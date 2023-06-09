@@ -6,6 +6,9 @@ def check_reebot():
 	"""Returns True if the computer has a pending reboot."""
 	return os.path.exist("/run/reoot-required")
 
+def another_check_cpu_usage():
+	pass
+
 
 def main():
 	if check_reebot():
