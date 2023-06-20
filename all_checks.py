@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import subprocess
+#  This file have cpu safety checks. 
 
 def check_cpu_temperature():
     """  Shows current cpu's temperature and inform if it is above the safety limit"""
